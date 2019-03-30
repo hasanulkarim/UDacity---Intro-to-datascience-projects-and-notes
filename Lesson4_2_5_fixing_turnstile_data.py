@@ -37,8 +37,8 @@ def fix_turnstile_data(filenames):
         f = open(name, 'r') # create the file input object
         f_updated = open('updated_' + name,'w') # create the file output object
         
-        reader = csv.reader(f, delimiter=',') # read the file using csv reader
-        writer = csv.writer(f_updated, delimiter = ',') # write to the new file
+        reader = csv.reader(f, delimiter=',') # create csv reader
+        writer = csv.writer(f_updated, delimiter = ',') # create csv writer
         
         for row in reader:
             len_row = len(row)
